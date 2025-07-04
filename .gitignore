@@ -1,7 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+node_modules/
+.pnp
+.pnp.js
+
+# testing
+/coverage
 
 # next.js
 /.next/
@@ -9,15 +14,20 @@
 
 # production
 /build
+dist/
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
+pnpm-debug.log*
 
 # env files
-.env*
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # vercel
 .vercel
@@ -25,3 +35,34 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local folder
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# android specific files
+android-tools.zip
+*.keystore
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+
+# capacitor
+.capacitor/
+ios/
+dist/
+
+# APK files (usually not tracked, but can be added manually if needed)
+*.apk
+*.aab
+
+# temporary files
+*.tmp
+*.temp
+*.log
