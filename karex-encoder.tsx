@@ -59,6 +59,7 @@ export default function KarexEncoder() {
       "ء",
       "ؤ",
       "ئ",
+      "ى"
     ]
 
     const alefVariants = {
